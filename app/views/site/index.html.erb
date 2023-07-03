@@ -1,1 +1,7 @@
 Hello!
+
+<% if user_signed_in? %>
+  Welcome <%= current_user.email %>
+<% end %>
+
+<%= link_to "Registration", new_user_registration_path %>
